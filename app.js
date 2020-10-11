@@ -7,11 +7,11 @@ let player1Num = Number(player1.value);
 let player2Num = Number(player2.value);
 submit.addEventListener('click', () => {
     //console.log(typeof player1Num)
-    let winingNum = Math.floor(Math.random() * 6);
-    if (player1.value === '' && player2.value === '') {
+    let winingNum = Math.floor(Math.random() * 11);
+    if (player1Num  === '' && player2Num === '') {
         alert('Please fill the input box');
     } else {
-        if (player1Num === winingNum && player1Num === winingNum) {
+        if (player1Num === winingNum && player2Num === winingNum) {
             answer.textContent = `THE NUMBER IS ${winingNum}  Tie `
             player1.value = '';
             player2.value = '';
